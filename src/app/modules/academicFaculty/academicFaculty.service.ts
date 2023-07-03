@@ -25,6 +25,7 @@ const getAllFaculties = async (
   paginationOptions: IPaginationOptions
 ): Promise<IGenericResponse<IAcademicFaculty[]>> => {
   const { searchTerm, ...filtersData } = filters;
+
   const { page, limit, skip, sortBy, sortOrder } =
     paginationHelpers.calculatePagination(paginationOptions);
 
@@ -87,7 +88,7 @@ const updateFaculty = async (
   id: string,
   payload: Partial<IAcademicFaculty>
 ): Promise<IAcademicFaculty | null> => {
-  // Check if the title name is already exist?
+  // Check if the faculty title name is already exist?
   if (payload.title) {
     const isExist = await AcademicFaculty.findOne({
       title: payload.title,
@@ -95,7 +96,7 @@ const updateFaculty = async (
     if (isExist) {
       throw new ApiError(
         httpStatus.BAD_REQUEST,
-        "Academic faculty title is already exist!"
+        `${payload.title}  is already exist as an academic faculty title.`
       );
     }
     // next();

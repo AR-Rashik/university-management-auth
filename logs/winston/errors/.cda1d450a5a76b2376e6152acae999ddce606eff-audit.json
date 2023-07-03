@@ -159,6 +159,26 @@
             "date": 1688331710365,
             "name": "E:\\Programming Hero Next Level Batch 1\\University management auth service\\logs\\winston\\errors\\PH-UMAS-2023-03-07-03-error.log",
             "hash": "a7bd9d4a31da96bc7b46a2e9bc89af351db0f05e3786934c5a1ee1a521dce447"
+        },
+        {
+            "date": 1688371278695,
+            "name": "E:\\Programming Hero Next Level Batch 1\\University management auth service\\logs\\winston\\errors\\PH-UMAS-2023-03-07-14-error.log",
+            "hash": "2fb5e58d2eec034d12c59f9e6340b0daf620f63a46c3e168da94fb04609a395f"
+        },
+        {
+            "date": 1688375643131,
+            "name": "E:\\Programming Hero Next Level Batch 1\\University management auth service\\logs\\winston\\errors\\PH-UMAS-2023-03-07-15-error.log",
+            "hash": "2dde68d00f49b506eed97f3cc92bb12356f913f089965651d2e15d4fb1b9466d"
+        },
+        {
+            "date": 1688399100286,
+            "name": "E:\\Programming Hero Next Level Batch 1\\University management auth service\\logs\\winston\\errors\\PH-UMAS-2023-03-07-21-error.log",
+            "hash": "2efe2992e35cb17549a543218bf731dfefaeac94669f8fb58f87ec0474dac1b0"
+        },
+        {
+            "date": 1688400134970,
+            "name": "E:\\Programming Hero Next Level Batch 1\\University management auth service\\logs\\winston\\errors\\PH-UMAS-2023-03-07-22-error.log",
+            "hash": "ddebe92e7bdb3c1b364d085ea5de3f4d2e41e5373b45ea460b295af2a869c90c"
         }
     ],
     "hashType": "sha256"
