@@ -3,7 +3,7 @@ import {
   IAcademicFaculty,
   AcademicFacultyModel,
 } from "./academicFaculty.interface";
-import ApiError from "../../../errors/ApiErrors";
+import ApiError from "../../../errors/ApiError";
 import httpStatus from "http-status";
 
 const AcademicFacultySchema = new Schema<

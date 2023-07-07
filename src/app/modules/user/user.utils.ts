@@ -1,7 +1,7 @@
 import { IAcademicSemester } from "../academicSemester/academicSemester.interface";
 import { User } from "./user.model";
 
-// Find last student dd
+// Find last student id
 export const findLastStudentId = async (): Promise<string | undefined> => {
   const lastStudent = await User.findOne({ role: "student" }, { id: 1, _id: 0 })
     .sort({
@@ -43,7 +43,7 @@ export const findLastFacultyId = async (): Promise<string | undefined> => {
     })
     .lean();
 
-  return lastFaculty?.id ? lastFaculty?.id.substring(2) : undefined;
+  return lastFaculty?.id ? lastFaculty.id.substring(2) : undefined;
 };
 
 // Generate Faculty Id
@@ -58,6 +58,29 @@ export const generateFacultyId = async (): Promise<string> => {
   incrementedId = `F-${incrementedId}`; // we can't increment this id with F-. We have to remove F- then increment it
 
   // console.log(incrementedId);
+
+  return incrementedId;
+};
+
+// Find last admin id
+export const findLastAdminId = async (): Promise<string | undefined> => {
+  const lastFaculty = await User.findOne({ role: "admin" }, { id: 1, _id: 0 })
+    .sort({
+      createdAt: -1,
+    })
+    .lean();
+
+  return lastFaculty?.id ? lastFaculty.id.substring(2) : undefined;
+};
+
+// Generate admin id
+export const generateAdminId = async (): Promise<string> => {
+  const currentId =
+    (await findLastAdminId()) || (0).toString().padStart(5, "0");
+
+  let incrementedId = (parseInt(currentId) + 1).toString().padStart(5, "0");
+
+  incrementedId = `A-${incrementedId}`;
 
   return incrementedId;
 };

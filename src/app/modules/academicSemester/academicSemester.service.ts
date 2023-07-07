@@ -1,5 +1,5 @@
 import httpStatus from "http-status";
-import ApiError from "../../../errors/ApiErrors";
+import ApiError from "../../../errors/ApiError";
 import {
   academicSemesterSearchableFields,
   academicSemesterTitleCodeMapper,

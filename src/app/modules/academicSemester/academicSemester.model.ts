@@ -5,7 +5,7 @@ import {
   academicSemesterMonths,
   academicSemesterTitles,
 } from "./academicSemester.constant";
-import ApiError from "../../../errors/ApiErrors";
+import ApiError from "../../../errors/ApiError";
 import httpStatus from "http-status";
 
 const academicSemesterSchema = new Schema<IAcademicSemester>(
