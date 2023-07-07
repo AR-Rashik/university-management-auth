@@ -8,7 +8,7 @@ import httpStatus from "http-status";
 import { studentSearchableFields } from "./student.constant";
 import { IStudent, IStudentFilters } from "./student.interface";
 import { Student } from "./student.model";
-import ApiError from "../../../errors/ApiErrors";
+import ApiError from "../../../errors/ApiError";
 import { User } from "../user/user.model";
 
 // Get all students
@@ -140,23 +140,30 @@ const updateStudent = async (
 const deleteStudent = async (id: string): Promise<IStudent | null> => {
   const session = await mongoose.startSession(); // start session on mongoose
 
-  // Check if the id is correct.
+  // Check if the id is correct for student.
   if (id) {
     const isCorrect = await Student.findOne({
       id,
     });
     if (!isCorrect) {
-      throw new ApiError(
-        httpStatus.BAD_REQUEST,
-        `Unable to delete as ${id} is not an User Id.`
-      );
+      throw new ApiError(httpStatus.NOT_FOUND, "Student not found!");
+    }
+  }
+
+  // Check if the id is correct for user.
+  if (id) {
+    const isCorrect = await User.findOne({
+      id,
+    });
+    if (!isCorrect) {
+      throw new ApiError(httpStatus.NOT_FOUND, "User not found!");
     }
   }
 
   try {
     session.startTransaction(); // start transaction
 
-    // Delete document from User
+    // Delete document from User first
     const deletedUser = await User.findOneAndDelete({ id }, { session });
 
     if (deletedUser) {
@@ -170,7 +177,7 @@ const deleteStudent = async (id: string): Promise<IStudent | null> => {
       await session.endSession();
       return result;
     } else {
-      throw new ApiError(httpStatus.BAD_REQUEST, "Failed to delete user!");
+      throw new ApiError(httpStatus.BAD_REQUEST, "Failed to delete student!");
     }
   } catch (error) {
     // Handle error and rollback the transaction

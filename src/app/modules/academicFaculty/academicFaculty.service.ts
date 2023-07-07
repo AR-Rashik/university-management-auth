@@ -8,7 +8,7 @@ import {
   IAcademicFacultyFilters,
 } from "./academicFaculty.interface";
 import { AcademicFaculty } from "./academicFaculty.model";
-import ApiError from "../../../errors/ApiErrors";
+import ApiError from "../../../errors/ApiError";
 import httpStatus from "http-status";
 
 // Create faculty

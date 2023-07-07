@@ -2,24 +2,27 @@ import { Model, Types } from "mongoose";
 import { IAcademicDepartment } from "../academicDepartment/academicDepartment.interface";
 import { IAcademicFaculty } from "../academicFaculty/academicFaculty.interface";
 import { IAcademicSemester } from "../academicSemester/academicSemester.interface";
+import { Gender } from "../../../constants/gender";
+import { BloodGroup } from "../../../constants/bloodGroup";
+import { UserName } from "../../../constants/userName";
 
-type Gender = "male" | "female" | "other";
-type BloodGroup =
-  | "A+"
-  | "A-"
-  | "B+"
-  | "B-"
-  | "AB+"
-  | "AB-"
-  | "O+"
-  | "O-"
-  | "Unknown";
+// type Gender = "male" | "female" | "other";
+// type BloodGroup =
+//   | "A+"
+//   | "A-"
+//   | "B+"
+//   | "B-"
+//   | "AB+"
+//   | "AB-"
+//   | "O+"
+//   | "O-"
+//   | "Unknown";
 
-export type UserName = {
-  firstName: string;
-  middleName?: string;
-  lastName: string;
-};
+// export type UserName = {
+//   firstName: string;
+//   middleName?: string;
+//   lastName: string;
+// };
 
 export type Guardian = {
   fatherName: string;

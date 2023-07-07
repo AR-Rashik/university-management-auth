@@ -8,7 +8,7 @@ import {
   IAcademicDepartmentFilters,
 } from "./academicDepartment.interface";
 import { AcademicDepartment } from "./academicDepartment.model";
-import ApiError from "../../../errors/ApiErrors";
+import ApiError from "../../../errors/ApiError";
 import httpStatus from "http-status";
 
 // Create department

@@ -6,7 +6,7 @@ import config from "../../config";
 import { IGenericErrorMessage } from "../../interfaces/error";
 import handleValidationError from "../../errors/handleValidationError";
 import { ZodError } from "zod";
-import ApiError from "../../errors/ApiErrors";
+import ApiError from "../../errors/ApiError";
 import { errorLogger } from "../../shared/logger";
 import handleZodError from "../../errors/handleZodError";
 import { Error } from "mongoose";
