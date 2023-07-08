@@ -21,17 +21,14 @@ const myFormat = printf(({ level, message, label, timestamp }) => {
 const logger = createLogger({
   level: "info",
   format: combine(
-    label({ label: "PH-UMAS" }),
+    label({ label: "PH-DCH" }),
     timestamp(),
     myFormat
     // prettyPrint()
   ),
   transports: [
     new transports.Console(),
-    // new transports.File({    // not needed for daily-rotate-file
-    //   filename: path.join(process.cwd(), "logs", "winston", "success.log"),
-    //   level: "info",
-    // }),
+
     new DailyRotateFile({
       // for daily-rotate-file
       filename: path.join(
@@ -39,7 +36,7 @@ const logger = createLogger({
         "logs",
         "winston",
         "successes",
-        "PH-UMAS-%DATE%-success.log"
+        "PH-DCH-%DATE%-success.log"
       ),
       datePattern: "YYYY-DD-MM-HH",
       zippedArchive: true,
@@ -52,13 +49,10 @@ const logger = createLogger({
 // For error logger
 const errorLogger = createLogger({
   level: "error",
-  format: combine(label({ label: "PH-UMAS" }), timestamp(), myFormat),
+  format: combine(label({ label: "PH-DCH" }), timestamp(), myFormat),
   transports: [
     new transports.Console(),
-    // new transports.File({  // not needed for daily-rotate-file
-    //   filename: path.join(process.cwd(), "logs", "winston", "error.log"),
-    //   level: "error",
-    // }),
+
     new DailyRotateFile({
       // for daily-rotate-file
       filename: path.join(
@@ -66,7 +60,7 @@ const errorLogger = createLogger({
         "logs",
         "winston",
         "errors",
-        "PH-UMAS-%DATE%-error.log"
+        "PH-DCH-%DATE%-error.log"
       ),
       datePattern: "YYYY-DD-MM-HH",
       zippedArchive: true,
@@ -77,20 +71,3 @@ const errorLogger = createLogger({
 });
 
 export { logger, errorLogger };
-
-// const logger = winston.createLogger({
-//   level: "info",
-//   format: winston.format.json(),
-//   transports: [
-//     //
-//     // - Write all logs with importance level of `error` or less to `error.log`
-//     // - Write all logs with importance level of `info` or less to `combined.log`
-//     //
-
-//     new winston.transports.Console(),
-//     new winston.transports.File({ filename: "error.log", level: "error" }),
-//     new winston.transports.File({ filename: "combined.log" }),
-//   ],
-// });
-
-// export default logger;

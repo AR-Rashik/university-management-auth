@@ -1,0 +1,30 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "E:\\Programming Hero Next Level Batch 1\\Mission 3\\Assignment - 3\\Digital Cow Hut Backend Assignment\\logs\\winston\\errors\\.641235c4a12359f513eb9a6a4a64922e7f57592d-audit.json",
+    "files": [
+        {
+            "date": 1688835368094,
+            "name": "E:\\Programming Hero Next Level Batch 1\\Mission 3\\Assignment - 3\\Digital Cow Hut Backend Assignment\\logs\\winston\\errors\\PH-DCH-2023-08-07-22-error.log",
+            "hash": "74a3d8f5a6c81c1b09519ec51db7964423ce7a119da61e75e268407041355f3b"
+        },
+        {
+            "date": 1688835831026,
+            "name": "E:\\Programming Hero Next Level Batch 1\\Mission 3\\Assignment - 3\\Digital Cow Hut Backend Assignment\\logs\\winston\\errors\\PH-DCH-2023-08-07-23-error.log",
+            "hash": "514c510db85f2b72e298d79f1e282bcee14bc34fcf66daf7d5afa1c7621b9798"
+        },
+        {
+            "date": 1688839500069,
+            "name": "E:\\Programming Hero Next Level Batch 1\\Mission 3\\Assignment - 3\\Digital Cow Hut Backend Assignment\\logs\\winston\\errors\\PH-DCH-2023-09-07-00-error.log",
+            "hash": "4ba766c70bbb779ccd5cf1f087f662bde3c49a0bc42095984a82b8f6dc30a993"
+        },
+        {
+            "date": 1688843074505,
+            "name": "E:\\Programming Hero Next Level Batch 1\\Mission 3\\Assignment - 3\\Digital Cow Hut Backend Assignment\\logs\\winston\\errors\\PH-DCH-2023-09-07-01-error.log",
+            "hash": "5cdac4d5b4003501c5216d76dbe41c129c774c28718350a66e629fb5d56a3291"
+        }
+    ],
+    "hashType": "sha256"
+}

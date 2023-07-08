@@ -13,9 +13,6 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Application routes
-// app.use("/api/v1/users/", UserRoutes);
-// app.use("/api/v1/academic-semesters/", AcademicSemesterRoutes);
 app.use("/api/v1/", routes);
 
 // Testing
@@ -38,16 +35,5 @@ app.use((req: Request, res: Response, next: NextFunction) => {
 
   next();
 });
-
-// const academicSemester = {
-//   year: "2030",
-//   code: "01",
-// };
-
-// const testId = async () => {
-//   const testId = await generateFacultyId();
-//   console.log(testId);
-// };
-// testId();
 
 export default app;

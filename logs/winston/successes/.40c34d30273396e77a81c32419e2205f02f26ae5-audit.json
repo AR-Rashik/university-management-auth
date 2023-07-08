@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "E:\\Programming Hero Next Level Batch 1\\Mission 3\\Assignment - 3\\Digital Cow Hut Backend Assignment\\logs\\winston\\successes\\.40c34d30273396e77a81c32419e2205f02f26ae5-audit.json",
+    "files": [
+        {
+            "date": 1688834967003,
+            "name": "E:\\Programming Hero Next Level Batch 1\\Mission 3\\Assignment - 3\\Digital Cow Hut Backend Assignment\\logs\\winston\\successes\\PH-UMAS-2023-08-07-22-success.log",
+            "hash": "9c5d8f36e2de45e61098d82372c401cff2b97a0c1920cf8aca3027f7f0ae8122"
+        }
+    ],
+    "hashType": "sha256"
+}
