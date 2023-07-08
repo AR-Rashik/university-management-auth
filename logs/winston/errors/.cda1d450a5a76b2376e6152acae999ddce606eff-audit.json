@@ -6,26 +6,6 @@
     "auditLog": "E:\\Programming Hero Next Level Batch 1\\University management auth service\\logs\\winston\\errors\\.cda1d450a5a76b2376e6152acae999ddce606eff-audit.json",
     "files": [
         {
-            "date": 1687591614788,
-            "name": "E:\\Programming Hero Next Level Batch 1\\University management auth service\\logs\\winston\\errors\\PH-UMAS-2023-24-06-13-error.log",
-            "hash": "25da688678d23e5c9d60aac6de86b077938fe99e68a88c0ff4fc0e2abf14d654"
-        },
-        {
-            "date": 1687594463764,
-            "name": "E:\\Programming Hero Next Level Batch 1\\University management auth service\\logs\\winston\\errors\\PH-UMAS-2023-24-06-14-error.log",
-            "hash": "8d7e8dfaa15c2241367ffee8cd43a77977eb2905e66d38100a3298311714d435"
-        },
-        {
-            "date": 1687599076204,
-            "name": "E:\\Programming Hero Next Level Batch 1\\University management auth service\\logs\\winston\\errors\\PH-UMAS-2023-24-06-15-error.log",
-            "hash": "5a1e7d95d3d9bbf9689e987a100a79e0d707ca79c9eedc03237dbdf732a5f2a6"
-        },
-        {
-            "date": 1687601680539,
-            "name": "E:\\Programming Hero Next Level Batch 1\\University management auth service\\logs\\winston\\errors\\PH-UMAS-2023-24-06-16-error.log",
-            "hash": "94ef20a6ac1b9ada481be0c58c39f3c9be578ef2fd695bd0708c64425491c283"
-        },
-        {
             "date": 1687633791655,
             "name": "E:\\Programming Hero Next Level Batch 1\\University management auth service\\logs\\winston\\errors\\PH-UMAS-2023-25-06-01-error.log",
             "hash": "fc637a577183bfeb0122f6d65bc8d9284e9f5da746a5d29c43dfa665e1061174"
@@ -269,6 +249,16 @@
             "date": 1688753369319,
             "name": "E:\\Programming Hero Next Level Batch 1\\University management auth service\\logs\\winston\\errors\\PH-UMAS-2023-08-07-00-error.log",
             "hash": "c4937f603910be82c47d2a724c8e174cdd9d8ad14281085aa8308da207ad4afa"
+        },
+        {
+            "date": 1688831827586,
+            "name": "E:\\Programming Hero Next Level Batch 1\\University management auth service\\logs\\winston\\errors\\PH-UMAS-2023-08-07-21-error.log",
+            "hash": "12e64957a36c0c7c19adb32109dd474ec556e298db76382430f2635c033fbaa8"
+        },
+        {
+            "date": 1688832079871,
+            "name": "E:\\Programming Hero Next Level Batch 1\\University management auth service\\logs\\winston\\errors\\PH-UMAS-2023-08-07-22-error.log",
+            "hash": "d34d21e6f82527de9429d2c467231ddb5d751bcdcad36336bf0be54356da5f22"
         }
     ],
     "hashType": "sha256"

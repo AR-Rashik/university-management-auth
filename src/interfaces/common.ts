@@ -12,6 +12,7 @@ export type IGenericResponse<T> = {
 
 // Generic error response
 export type IGenericErrorResponse = {
+  // success: boolean,
   statusCode: number;
   message: string;
   errorMessages: IGenericErrorMessage[];

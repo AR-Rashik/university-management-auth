@@ -11,6 +11,7 @@ import { errorLogger } from "../../shared/logger";
 import handleZodError from "../../errors/handleZodError";
 import { Error } from "mongoose";
 import handleCastError from "../../errors/handleCastError";
+import handleMongoServerError from "../../errors/handleMongoServerError";
 
 const globalErrorHandler: ErrorRequestHandler = (
   error,
@@ -24,10 +25,12 @@ const globalErrorHandler: ErrorRequestHandler = (
     ? console.log(`🚫 globalErrorHandler ~~`, error)
     : errorLogger.error(`🚫 globalErrorHandler ~~`, error);
 
+  // const status = "false";
   let statusCode = 500;
   let message = "Something went wrong !";
   let errorMessages: IGenericErrorMessage[] = [
     {
+      // optional
       path: req.originalUrl,
       message: error?.message,
     },
@@ -37,25 +40,40 @@ const globalErrorHandler: ErrorRequestHandler = (
   if (error?.name === "ValidationError") {
     // res.status(200).json({ error });   // at first see the type of the error response then simplify it.
     const simplifiedError = handleValidationError(error);
+
     statusCode = simplifiedError.statusCode;
     message = simplifiedError.message;
     errorMessages = simplifiedError.errorMessages;
   }
+
+  // Mongo server error
+  else if (error.name === "MongoServerError") {
+    const simplifiedError = handleMongoServerError(error);
+
+    statusCode = simplifiedError.statusCode;
+    message = simplifiedError.message;
+    errorMessages = simplifiedError.errorMessages;
+  }
+
   // zod error
   else if (error instanceof ZodError) {
     const simplifiedError = handleZodError(error);
+
     statusCode = simplifiedError.statusCode;
     message = simplifiedError.message;
     errorMessages = simplifiedError.errorMessages;
   }
+
   // Mongoose cast error
   else if (error?.name === "CastError") {
     // res.status(200).json({ error });
     const simplifiedError = handleCastError(error);
+
     statusCode = simplifiedError.statusCode;
     message = simplifiedError.message;
     errorMessages = simplifiedError.errorMessages;
   }
+
   // API error
   else if (error instanceof ApiError) {
     statusCode = error?.statusCode;
@@ -69,7 +87,10 @@ const globalErrorHandler: ErrorRequestHandler = (
           },
         ]
       : [];
-  } else if (error instanceof Error) {
+  }
+
+  // Common error
+  else if (error instanceof Error) {
     // message = error?.message;
     message = error?.name;
     errorMessages = error?.message

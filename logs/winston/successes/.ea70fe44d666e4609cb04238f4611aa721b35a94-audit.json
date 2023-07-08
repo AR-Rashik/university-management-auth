@@ -6,36 +6,6 @@
     "auditLog": "E:\\Programming Hero Next Level Batch 1\\University management auth service\\logs\\winston\\successes\\.ea70fe44d666e4609cb04238f4611aa721b35a94-audit.json",
     "files": [
         {
-            "date": 1687580529565,
-            "name": "E:\\Programming Hero Next Level Batch 1\\University management auth service\\logs\\winston\\successes\\PH-UMAS-2023-24-06-10-success.log",
-            "hash": "00216c1327893074ab48d7b2deb42641f9af1990f5b204ef42323d734eeba1d7"
-        },
-        {
-            "date": 1687582837712,
-            "name": "E:\\Programming Hero Next Level Batch 1\\University management auth service\\logs\\winston\\successes\\PH-UMAS-2023-24-06-11-success.log",
-            "hash": "f8e15afb952a9f7bbee576076db14625396e4ed3f632473a4ede23dbb06b7d9c"
-        },
-        {
-            "date": 1687590651181,
-            "name": "E:\\Programming Hero Next Level Batch 1\\University management auth service\\logs\\winston\\successes\\PH-UMAS-2023-24-06-13-success.log",
-            "hash": "ff18b6efc09dbb803e706ce61e03d3c1626854521aff1d9e3aea0e67dcf6dfbb"
-        },
-        {
-            "date": 1687594463756,
-            "name": "E:\\Programming Hero Next Level Batch 1\\University management auth service\\logs\\winston\\successes\\PH-UMAS-2023-24-06-14-success.log",
-            "hash": "81cd7cf15c0e0513e6c5caf6fac4321c01ce51183ac8e63a4f55a4d1ba775996"
-        },
-        {
-            "date": 1687599076193,
-            "name": "E:\\Programming Hero Next Level Batch 1\\University management auth service\\logs\\winston\\successes\\PH-UMAS-2023-24-06-15-success.log",
-            "hash": "e55129276d2d80b8f32869b9b3031bee3c34b24b59f0e09ae2f3ca5369c32760"
-        },
-        {
-            "date": 1687601680534,
-            "name": "E:\\Programming Hero Next Level Batch 1\\University management auth service\\logs\\winston\\successes\\PH-UMAS-2023-24-06-16-success.log",
-            "hash": "23c00322de8dc19a39ffda0965be2f31605a8574c9aef35bfad44bf1fe81123c"
-        },
-        {
             "date": 1687633791652,
             "name": "E:\\Programming Hero Next Level Batch 1\\University management auth service\\logs\\winston\\successes\\PH-UMAS-2023-25-06-01-success.log",
             "hash": "78cfc4c8b45c468173c57120ab21a10f400d89cebd1f762d14f6d06a8efc10c0"
@@ -279,6 +249,16 @@
             "date": 1688753369310,
             "name": "E:\\Programming Hero Next Level Batch 1\\University management auth service\\logs\\winston\\successes\\PH-UMAS-2023-08-07-00-success.log",
             "hash": "ba2a596514d9586b42ccc120cde0379355e44d2235bde4ca7b944e9e8bf2f902"
+        },
+        {
+            "date": 1688831827579,
+            "name": "E:\\Programming Hero Next Level Batch 1\\University management auth service\\logs\\winston\\successes\\PH-UMAS-2023-08-07-21-success.log",
+            "hash": "ee96769ab1dd4262ce88792a28a43d567bc0941402fdadf5604944aa168caa9a"
+        },
+        {
+            "date": 1688832079865,
+            "name": "E:\\Programming Hero Next Level Batch 1\\University management auth service\\logs\\winston\\successes\\PH-UMAS-2023-08-07-22-success.log",
+            "hash": "bd15007f44d9d9015f7d34410af87ad2f74a2ef43345ab9030a72d0fc6d02402"
         }
     ],
     "hashType": "sha256"
